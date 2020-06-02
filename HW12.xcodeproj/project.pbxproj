@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841281BA2486BBC00088845A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841281B92486BBC00088845A /* City.swift */; };
+		841281BC2486FDB60088845A /* WeatherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841281BB2486FDB60088845A /* WeatherLoader.swift */; };
 		84FA3686248397F300649214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3685248397F300649214 /* AppDelegate.swift */; };
 		84FA3688248397F300649214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3687248397F300649214 /* SceneDelegate.swift */; };
 		84FA368A248397F300649214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3689248397F300649214 /* ViewController.swift */; };
 		84FA368D248397F300649214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA368B248397F300649214 /* Main.storyboard */; };
 		84FA368F248397F500649214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA368E248397F500649214 /* Assets.xcassets */; };
 		84FA3692248397F500649214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA3690248397F500649214 /* LaunchScreen.storyboard */; };
+		84FA369A2483DC1C00649214 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA36992483DC1C00649214 /* SimpleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841281B92486BBC00088845A /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		841281BB2486FDB60088845A /* WeatherLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLoader.swift; sourceTree = "<group>"; };
 		84FA3682248397F300649214 /* HW12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FA3685248397F300649214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FA3687248397F300649214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		84FA368E248397F500649214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FA3691248397F500649214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FA3693248397F500649214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FA36992483DC1C00649214 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				84FA3685248397F300649214 /* AppDelegate.swift */,
 				84FA3687248397F300649214 /* SceneDelegate.swift */,
 				84FA3689248397F300649214 /* ViewController.swift */,
+				841281BB2486FDB60088845A /* WeatherLoader.swift */,
+				841281B92486BBC00088845A /* City.swift */,
 				84FA368B248397F300649214 /* Main.storyboard */,
+				84FA36992483DC1C00649214 /* SimpleViewController.swift */,
 				84FA368E248397F500649214 /* Assets.xcassets */,
 				84FA3690248397F500649214 /* LaunchScreen.storyboard */,
 				84FA3693248397F500649214 /* Info.plist */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FA368A248397F300649214 /* ViewController.swift in Sources */,
+				841281BC2486FDB60088845A /* WeatherLoader.swift in Sources */,
+				841281BA2486BBC00088845A /* City.swift in Sources */,
 				84FA3686248397F300649214 /* AppDelegate.swift in Sources */,
+				84FA369A2483DC1C00649214 /* SimpleViewController.swift in Sources */,
 				84FA3688248397F300649214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

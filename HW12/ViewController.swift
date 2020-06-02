@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var weather: [City] = []
+    
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var cityWeatherLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        WeatherLoader().loadWeather()
+        
     }
-
-
+    
+    
 }
+
+
+
 

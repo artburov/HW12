@@ -1,24 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qFo-3G-AEa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--1 Day Weather Standart-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-lu-Xov">
+                                <rect key="frame" x="186" y="209" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-ll-3eK">
+                                <rect key="frame" x="186" y="280" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="1 Day Weather Standart" id="h0m-ni-93k"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="hbh-lu-Xov" id="Nh4-qe-BKS"/>
+                        <outlet property="cityWeatherLabel" destination="JnN-ll-3eK" id="jhH-AB-KdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2655" y="-542"/>
+        </scene>
+        <!--16 Days Weather Standart-->
+        <scene sceneID="N9e-wI-1Ya">
+            <objects>
+                <viewController id="IKI-ej-8Qg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FMB-mj-ZtG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Mp3-70-cNW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="16 Days Weather Standart" id="tKg-c8-E4j">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KUr-u7-rKi"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BN-Zo-9Ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KCn-WQ-MQE">
+            <objects>
+                <navigationController id="qFo-3G-AEa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZEM-PG-meu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6gZ-0i-x67" kind="relationship" relationship="rootViewController" id="jGM-Ux-RRp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIM-Yj-x5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="119"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="20m-TE-UZv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6gZ-0i-x67" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cKA-AS-Ktf"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CRf-hM-Sa6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yoN-Ok-7aS" kind="relationship" relationship="viewControllers" id="8ND-UO-sZE"/>
+                        <segue destination="xfk-Mn-2bn" kind="relationship" relationship="viewControllers" id="4He-0F-epb"/>
+                        <segue destination="JgY-PS-qes" kind="relationship" relationship="viewControllers" id="Agl-IN-dbj"/>
+                        <segue destination="pZp-9K-PHg" kind="relationship" relationship="viewControllers" id="O8q-bZ-9ke"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zl4-FQ-eVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!-- 1 Day Weather Alamofire-->
+        <scene sceneID="0cz-Ho-jTy">
+            <objects>
+                <viewController id="Bf9-O2-ZEP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iB4-1i-Z1v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1ET-Sm-lpO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" 1 Day Weather Alamofire" id="NAU-Gp-6JW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVw-de-7jX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="893"/>
+        </scene>
+        <!--Alamofire - 16 Days-->
+        <scene sceneID="MWe-VC-RWN">
+            <objects>
+                <navigationController id="pZp-9K-PHg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alamofire - 16 Days" id="qNl-16-IDK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4qe-CP-pQf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XVe-XV-xwc" kind="relationship" relationship="rootViewController" id="XJX-EZ-MVJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ9-cs-mMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="882"/>
+        </scene>
+        <!--16 Days Weather Alamofire-->
+        <scene sceneID="MfY-vX-zFW">
+            <objects>
+                <viewController id="XVe-XV-xwc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFm-HX-VCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mJC-Zh-RvY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="16 Days Weather Alamofire" id="Hw4-v5-vb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdF-4U-KcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471" y="878"/>
+        </scene>
+        <!--Standart - 1 Day-->
+        <scene sceneID="wzc-RK-wFp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yoN-Ok-7aS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Standart - 1 Day" id="X8b-Id-Bh7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aKi-CC-pTC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5YX-iA-aBJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9X-PQ-NqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="-542"/>
+        </scene>
+        <!--Standart - 16 Days-->
+        <scene sceneID="nv1-Ii-Kdy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JgY-PS-qes" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Standart - 16 Days" id="CF5-MS-OIc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Fu-nY-xVv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IKI-ej-8Qg" kind="relationship" relationship="rootViewController" id="5Cf-jb-T7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGY-Cd-a3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="119"/>
+        </scene>
+        <!--Alamofire - 1 Day-->
+        <scene sceneID="ILl-DW-coh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xfk-Mn-2bn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alamofire - 1 Day" id="kAh-58-J0a"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lQv-Pl-FZ1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bf9-O2-ZEP" kind="relationship" relationship="rootViewController" id="rvB-eP-0Gf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sv0-I2-jyi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="893"/>
         </scene>
     </scenes>
 </document>
