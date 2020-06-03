@@ -9,23 +9,20 @@
 import Foundation
 
 class City {
-    let name: String
-    var temp: Double
-
-    init?(data: NSDictionary) {
-        guard let name = data["name"] as? String,
-            let temp = data["temp"] as? Double else {
-                return nil
-        }
-        self.name = name
-        self.temp = temp
-    }
+//    let name: String
+//    var temp: Double
+//
+//    init?(data: NSDictionary) {
+//        guard let name = data["name"] as? String,
+//            let temp = data["temp"] as? Double else {
+//                return nil
+//        }
+//        self.name = name
+//        self.temp = temp
+//    }
 
 }
 
-
-
-
 struct Temp {
-    let temp: Double
+//    let temp: Double
 }

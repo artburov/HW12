@@ -8,44 +8,25 @@
 
 import Foundation
 
-
-protocol WeatherLoaderDelegate {
-    func loaded(weather: [City])
-}
-
-
 class WeatherLoader {
-    
-    var delegate: WeatherLoaderDelegate?
-    
-    func loadWeather() {
-        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=963c5c088b06689acbddeaad7c1cb399")!
-        let request = URLRequest(url: url)
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data,
-                let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-                let jsonDict = json as? NSDictionary {
-                
-//                print(jsonDict)
-                
-                var weather: [City] = []
-                
-                for (_, data) in jsonDict where data is NSDictionary {
-                    if let allWeather = City(data: data as! NSDictionary) {
-                        
-                        weather.append(allWeather)
-                        
-                    }
-                }
-                print(weather.count)
-                self.delegate?.loaded(weather: weather)
-            }
-        }
-        task.resume()
-        
-    }
-    
-    
-    
+//    public var cityName: String?
+//    public var findWeather: Any?
+//
+//    func loadWeather() -> (String?, Any?) {
+//        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=963c5c088b06689acbddeaad7c1cb399")!
+//        let request = URLRequest(url: url)
+//
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            if let data = data,
+//                let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
+//                let jsonDict = json as? [String:AnyObject] {
+//
+//                self.cityName = jsonDict["name"] as? String ?? nil
+//                self.findWeather = jsonDict["main"]!["temp"] ?? nil
+//
+//            }
+//        }
+//        task.resume()
+//        return(cityName, findWeather)
+//    }
 }
