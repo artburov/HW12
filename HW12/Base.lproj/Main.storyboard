@@ -108,14 +108,40 @@
         <!-- 1 Day Weather Alamofire-->
         <scene sceneID="0cz-Ho-jTy">
             <objects>
-                <viewController id="Bf9-O2-ZEP" sceneMemberID="viewController">
+                <viewController id="Bf9-O2-ZEP" customClass="AlamofireController" customModule="HW12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iB4-1i-Z1v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-gZ-RyD">
+                                <rect key="frame" x="128" y="209" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-1m-Z1n">
+                                <rect key="frame" x="128" y="260" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1ET-Sm-lpO" firstAttribute="trailing" secondItem="Vwn-1m-Z1n" secondAttribute="trailing" constant="127" id="1Lx-hR-ImJ"/>
+                            <constraint firstItem="Vwn-1m-Z1n" firstAttribute="top" secondItem="hbd-gZ-RyD" secondAttribute="bottom" constant="30" id="35b-7l-EZi"/>
+                            <constraint firstItem="hbd-gZ-RyD" firstAttribute="top" secondItem="1ET-Sm-lpO" secondAttribute="top" constant="121" id="4KF-tr-fiL"/>
+                            <constraint firstItem="hbd-gZ-RyD" firstAttribute="leading" secondItem="1ET-Sm-lpO" secondAttribute="leading" constant="128" id="L2z-Og-OlL"/>
+                            <constraint firstItem="1ET-Sm-lpO" firstAttribute="trailing" secondItem="hbd-gZ-RyD" secondAttribute="trailing" constant="127" id="se8-ic-KTb"/>
+                            <constraint firstItem="Vwn-1m-Z1n" firstAttribute="leading" secondItem="1ET-Sm-lpO" secondAttribute="leading" constant="128" id="yEI-bj-ZIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1ET-Sm-lpO"/>
                     </view>
                     <navigationItem key="navigationItem" title=" 1 Day Weather Alamofire" id="NAU-Gp-6JW"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="hbd-gZ-RyD" id="Dep-if-dB2"/>
+                        <outlet property="cityWeatherLabel" destination="Vwn-1m-Z1n" id="JrK-oZ-3TN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVw-de-7jX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

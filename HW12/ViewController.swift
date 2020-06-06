@@ -31,7 +31,7 @@ class ViewController: UIViewController {
                 self.cityName = jsonDict["name"] as? String ?? nil
                 self.findWeather = jsonDict["main"]!["temp"] as? Double ?? 0.0
                 
-                //Async thred for loading change func
+                //Async thred for loading change func in main thread
                 DispatchQueue.main.async {
                     self.changeLabels()
                 }
