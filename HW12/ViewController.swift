@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         cityWeatherLabel.text = weatherValue.getStringValue(withFloatingPoints: 1) + "\(" градусов")"
         cityNameLabel.text = self.cityName!
     }
-}
+}	
 
 extension Double {
     //Converting Double into String with round after dot feature (ex. 14.x or 14.xx )
